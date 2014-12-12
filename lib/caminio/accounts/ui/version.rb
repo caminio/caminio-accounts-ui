@@ -1,6 +1,6 @@
 module Caminio
-  module Sky
-    module Client
+  module Accounts
+    module UI
       VERSION = "0.0.1"
     end
   end
