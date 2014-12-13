@@ -26,6 +26,7 @@ module Caminio
           sprockets.append_path File.join(root, "app", "assets", "stylesheets")
           sprockets.append_path File.join(root, "app", "assets", "javascripts")
           sprockets.append_path File.join(root, "app", "assets", "images")
+          sprockets.append_path File.join(root, "app", "assets", "fonts")
           sprockets.append_path HandlebarsAssets.path
           # Configure Sprockets::Helpers (if necessary)
           Sprockets::Helpers.configure do |config|
