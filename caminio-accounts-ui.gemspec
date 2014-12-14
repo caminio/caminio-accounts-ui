@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Caminio::Accounts::UI::VERSION
   spec.authors       = ["thorsten zerha"]
   spec.email         = ["thorsten.zerha@tastenwerk.com"]
-  spec.summary       = %q{User Interace for caminio-sky}
+  spec.summary       = %q{User Interace for caminio-accounts}
   spec.homepage      = ""
   spec.license       = "MIT"
 
