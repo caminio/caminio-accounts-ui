@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'sprockets'
 require 'sinatra/sprockets-helpers'
 require 'handlebars_assets'
+require 'i18n'
 
 module Caminio
   module Accounts
