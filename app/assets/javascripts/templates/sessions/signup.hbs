@@ -1,0 +1,43 @@
+<div class="login-wrap">
+
+  <form {{action 'signupUser' on='submit'}} class="card">
+    <input type="submit" class="hide">
+
+    <div class="logo">
+      <img src="/favicon.png" class="logo-img">
+    </div>
+
+    <div class="radio radio-success inline">
+      {{radio-button id='isOrganization'  name='isOrganization' value='yes' groupValue=isOrganization}}
+      <label for="isOrganization">{{t 'organization'}}</label>
+      {{radio-button id='isPrivate' name='isOrganization' value='no' groupValue=isOrganization}}
+      <label for="isPrivate">{{t 'private'}}</label>
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" {{bind-attr value='email'}} {{translateAttr placeholder='email'}}>
+    </div>
+
+    {{#if organizationEnabled}}
+    <div class="form-group">
+      <input type="text" class="form-control" {{bind-attr value='organization'}} {{translateAttr placeholder='organization'}}>
+    </div>
+    {{/if}}
+
+    <div class="form-group">
+      <input type="password" class="form-control" {{bind-attr value='password'}} {{translateAttr placeholder='password'}}>
+    </div>
+
+    <div class="form-group agree-policies">
+      <div class="checkbox check-success">
+        <input type="checkbox" id="agree-policies" {{bind-attr checkedBinding='policiesAgreed'}}>
+        <label for="agree-policies">{{t 'agree_policies'}}</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="btn btn-primary form-control" {{translateAttr value='login'}}>
+    </div>
+
+  </form>
+</div>

@@ -1,4 +1,9 @@
 # For more information see: http://emberjs.com/guides/routing/
 
 Caminio.Router.map ->
-  @route 'overview.index', path: '/'
+  @route 'index', path: '/'
+  @resource 'sessions', ->
+    @route 'login'
+    @route 'logout'
+    @route 'forgot_password'
+    @route 'signup'

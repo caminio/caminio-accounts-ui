@@ -1,13 +1,18 @@
+#= require 3rd/pace.min
 #= require 3rd/jquery-2.1.1.debug
-#= require handlebars.runtime
+#= require handlebars
 #= require 3rd/ember.debug
 #= require 3rd/ember-data.debug
+#= require 3rd/ember-animate
 #= require 3rd/i18n
 #= require 3rd/i18n-plurals
 #= require 3rd/moment
 #= require 3rd/moment.de
+#= require 3rd/jquery.cookie
+#= require 3rd/ember-local-storage
 #= require_tree ./locales
 #= require_self
+#= require caminio-api
 #= require caminio-accounts
 
 window.Caminio = Ember.Application.create
@@ -17,10 +22,3 @@ window.Caminio = Ember.Application.create
   LOG_STACKTRACE_ON_DEPRECATION: true
   LOG_VERSION: true
   debugMode: true
-
-window.LANG = 'de' || $('html').attr('lang')
-
-Ember.I18n.locale = LANG
-Ember.I18n.translations = Ember.I18n.availableTranslations[LANG]
-moment.locale(LANG)
-

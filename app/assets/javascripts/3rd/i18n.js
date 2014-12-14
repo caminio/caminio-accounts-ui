@@ -152,3 +152,4 @@
   EmHandlebars.registerHelper('ta', attrHelperFunction);
 
 }).call(undefined, this);
+
