@@ -330,3 +330,36 @@ input[type="radio"], input[type="checkbox"] {
 .checkbox label {
   transition: border 0.2s linear 0s, color 0.2s linear 0s;
 }
+
+
+.field-with-errors,
+.field-with-errors input{
+  color: #a94442;
+}
+.field-with-errors .checkbox-box,
+.field-with-errors input{
+  background: #f2dede;
+  border-color: #a94442;
+}
+.field-with-errors input::-webkit-input-placeholder{
+  color: #e98482;
+}
+.field-with-errors input::-moz-placeholder{
+  color: #e98482;
+}
+.field-with-errors input:-ms-input-placeholder{
+  color: #e98482;
+}
+
+.field-with-errors label{
+  color: #d55;
+  font-weight: 600;
+}
+
+.field-with-errors .help-block{
+  color: #d55;
+}
+
+.field-with-errors .checkbox.check-success input[type="checkbox"] + label:before {
+  background-color: #f2dede;
+}

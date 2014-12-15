@@ -36,3 +36,20 @@
 .login-wrap .agree-policies{
   text-align: left;
 }
+
+.login-wrap .alert{
+  margin: 0;
+}
+
+.login-wrap .password-group{
+  position: relative;
+}
+
+.login-wrap .pw-progress{
+  border-radius: 0;
+  height: 13px;
+  position: absolute;
+  right: 5px;
+  top: 14px;
+  width: 50px;
+}

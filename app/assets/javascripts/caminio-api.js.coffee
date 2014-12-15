@@ -5,6 +5,8 @@ window.LANG = 'de' || $('html').attr('lang')
 
 Ember.I18n.locale = LANG
 Ember.I18n.translations = Ember.I18n.availableTranslations[LANG]
+# inject <attr>Translation into {{input }} helper
+Ember.TextField.reopen(Ember.I18n.TranslateableAttributes)
 
 moment.locale(LANG)
 
