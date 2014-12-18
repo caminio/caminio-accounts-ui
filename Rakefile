@@ -1,6 +1,7 @@
 require "bundler/gem_tasks"
 require 'sprockets/standalone'
-require 'caminio-accounts'
+require 'sqlite3'
+require 'caminio/accounts/rake'
 
 Sprockets::Standalone::RakeTask.new(:assets) do |task, sprockets|
   task.assets   = %w(application.css)
