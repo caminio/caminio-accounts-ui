@@ -22,3 +22,5 @@ window.Caminio = Ember.Application.create
   LOG_STACKTRACE_ON_DEPRECATION: true
   LOG_VERSION: true
   debugMode: true
+
+Caminio.set('apiHost', '/api/v1')

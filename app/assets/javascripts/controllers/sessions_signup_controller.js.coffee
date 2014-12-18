@@ -7,7 +7,7 @@ Caminio.SessionsSignupController = Ember.ObjectController.extend Caminio.Validat
       required:
         message: Em.I18n.t('errors.email_required')
       match:
-        regexp: /[@]{1}/
+        regexp: /.+@.+/
         message: Em.I18n.t('errors.not_an_email_address')
     organization:
       required: ->
@@ -48,6 +48,9 @@ Caminio.SessionsSignupController = Ember.ObjectController.extend Caminio.Validat
   actions:
 
     signupUser: ->
-      console.log 'validate'
       return unless @isValid()
-      console.log 'here'
+      Ember.$.post("#{Caminio.get('apiHost')}/users/signup", @getProperties('email','organization','password'))
+        .then (res)->
+          console.log res
+        .catch (err)->
+          console.log err
