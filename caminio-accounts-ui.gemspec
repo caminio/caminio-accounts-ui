@@ -23,7 +23,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sprockets-standalone"
   spec.add_dependency "handlebars_assets"
   spec.add_dependency "i18n"
+  spec.add_dependency "coffee-script"
   spec.add_dependency "sprockets-standalone"
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "guard"
+  spec.add_development_dependency "guard-puma"
 end

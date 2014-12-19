@@ -1,1 +1,1 @@
-Caminio.IndexRoute = Caminio.ApplicationRoute.extend()
+Caminio.IndexRoute = Caminio.AuthenticatedRoute.extend()
