@@ -1,0 +1,5 @@
+development:
+  host: 'mail.tastenwerk.com'
+  port: 25
+  user: 'this'
+  password: 'that'

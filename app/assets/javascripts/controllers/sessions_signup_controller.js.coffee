@@ -47,10 +47,10 @@ Caminio.SessionsSignupController = Ember.ObjectController.extend Caminio.Validat
 
   actions:
 
-    signupUser: ->
+    signupUser: =>
       return unless @isValid()
       Ember.$.post("#{Caminio.get('apiHost')}/users/signup", @getProperties('email','organization','password'))
-        .then (res)->
-          console.log res
-        .catch (err)->
+        .then (res)=>
+          @redirectToRoute 'sessions.enter_confirmation_key'
+        .fail (err)->
           console.log err
