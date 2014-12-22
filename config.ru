@@ -1,4 +1,4 @@
-require './lib/caminio/accounts/ui'
+require './lib/caminio/ui'
 
 require 'bundler'
 Bundler.require
@@ -18,16 +18,16 @@ use Rack::Cors do
   end
 end
 
-Caminio::Accounts.init
+Caminio::init
 
 map '/api' do
-  run Caminio::Accounts::API::Root
+  run Caminio::API::Root
 end
 
-map Caminio::Accounts::UI::App.assets_prefix do
-  run Caminio::Accounts::UI::App.sprockets
+map Caminio::UI::App.assets_prefix do
+  run Caminio::UI::App.sprockets
 end
 
 map '/' do
-  run Caminio::Accounts::UI::App
+  run Caminio::UI::App
 end

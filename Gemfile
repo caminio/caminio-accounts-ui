@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'caminio-accounts', github: 'caminio/caminio-accounts', branch: 'master'
+gem 'caminio', github: 'caminio/caminio', branch: 'core'
+gem 'pony'
+
 # Specify your gem's dependencies in caminio-sky-client.gemspec
 gemspec

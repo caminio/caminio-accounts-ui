@@ -12,7 +12,7 @@
 #= require 3rd/ember-local-storage
 #= require_tree ./locales
 #= require_self
-#= require caminio-api
+#= require caminio-ui
 #= require caminio-accounts
 
 window.Caminio = Ember.Application.create

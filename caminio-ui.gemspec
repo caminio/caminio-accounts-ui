@@ -1,14 +1,14 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'caminio/accounts/ui/version'
+require 'caminio/ui/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "caminio-accounts-ui"
-  spec.version       = Caminio::Accounts::UI::VERSION
+  spec.name          = "caminio-ui"
+  spec.version       = Caminio::UI::VERSION
   spec.authors       = ["thorsten zerha"]
   spec.email         = ["thorsten.zerha@tastenwerk.com"]
-  spec.summary       = %q{User Interace for caminio-accounts}
+  spec.summary       = %q{User Interace for caminio}
   spec.homepage      = ""
   spec.license       = "MIT"
 
